@@ -1007,7 +1007,7 @@ let countries = [{
 }];
 
 
-let resultado = countries.filter(); // TODO: Crea un nuevo array todos los paises que que usan el 'EURO' como mondeda
+let resultado = countries.filter(e => e.currencyCode = "EURO"); // TODO: Crea un nuevo array todos los paises que que usan el 'EURO' como mondeda
 console.log(resultado)
 
 let pokemons = [
@@ -1822,4 +1822,4 @@ let pokemons = [
     { "id": 809, "name": "Melmetal", "typeList": ["Steel"] }
 ];
 
-let pokemonsHada = pokemons.filter() // TODO: Crea un nuevo array con todos los pokemons que son del tipo 'Fairy'
+let pokemonsHada = pokemons.filter(e => e.typeList.includes('Fairy')) // TODO: Crea un nuevo array con todos los pokemons que son del tipo 'Fairy'
